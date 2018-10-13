@@ -1,0 +1,7 @@
+# Default ignored files
+.idea
+node_modules
+
+# Editor-based HTTP Client requests
+rest-client.private.env.json
+http-client.private.env.json

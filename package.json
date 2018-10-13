@@ -1,0 +1,21 @@
+{
+  "name": "docker-ddns",
+  "version": "1.0.0",
+  "description": "A ddns updater with docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "dateformat": "^3.0.3",
+    "fs-extra": "^7.0.0",
+    "ipify": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^1.0.1",
+    "@types/fs-extra": "^5.0.4"
+  }
+}
