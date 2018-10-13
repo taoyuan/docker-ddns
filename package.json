@@ -12,7 +12,8 @@
     "child-process-promise": "^2.2.1",
     "dateformat": "^3.0.3",
     "fs-extra": "^7.0.0",
-    "ipify": "^2.0.0"
+    "ipily": "^1.0.0",
+    "is-ip": "^2.0.0"
   },
   "devDependencies": {
     "@types/dateformat": "^1.0.1",

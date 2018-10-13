@@ -1,9 +1,8 @@
 const fse = require('fs-extra');
 const {exec} = require('child-process-promise');
-const ipify = require('ipify');
+const ipily = require('ipily');
 const df = require('dateformat');
-
-const regip = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
+const isIP = require('is-ip');
 
 const ipfile = '/data/dnm/ip.json';
 const cmd = 'dnu -c /data/dnm/domains.yml';
@@ -44,8 +43,8 @@ async function check() {
   }
 
   try {
-    const ip = await ipify();
-    if (!regip.test(ip)) {
+    const ip = await ipily();
+    if (!isIP(ip)) {
       return log(ip, 'is not valid ip address. ignore');
     }
 
